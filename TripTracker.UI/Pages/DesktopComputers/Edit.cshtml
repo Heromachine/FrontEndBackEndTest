@@ -1,0 +1,95 @@
+﻿@page
+@model TripTracker.UI.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>DesktopComputer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DesktopComputer.Id" />
+            <div class="form-group">
+                <label asp-for="DesktopComputer.Manufacturer" class="control-label"></label>
+                <input asp-for="DesktopComputer.Manufacturer" class="form-control" />
+                <span asp-validation-for="DesktopComputer.Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.TradeName" class="control-label"></label>
+                <input asp-for="DesktopComputer.TradeName" class="form-control" />
+                <span asp-validation-for="DesktopComputer.TradeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.ModelNumber" class="control-label"></label>
+                <input asp-for="DesktopComputer.ModelNumber" class="form-control" />
+                <span asp-validation-for="DesktopComputer.ModelNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.ServieTag" class="control-label"></label>
+                <input asp-for="DesktopComputer.ServieTag" class="form-control" />
+                <span asp-validation-for="DesktopComputer.ServieTag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.ComputerName" class="control-label"></label>
+                <input asp-for="DesktopComputer.ComputerName" class="form-control" />
+                <span asp-validation-for="DesktopComputer.ComputerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.CameronCountyNumber" class="control-label"></label>
+                <input asp-for="DesktopComputer.CameronCountyNumber" class="form-control" />
+                <span asp-validation-for="DesktopComputer.CameronCountyNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.Department" class="control-label"></label>
+                <input asp-for="DesktopComputer.Department" class="form-control" />
+                <span asp-validation-for="DesktopComputer.Department" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.DepartmentProgram" class="control-label"></label>
+                <input asp-for="DesktopComputer.DepartmentProgram" class="form-control" />
+                <span asp-validation-for="DesktopComputer.DepartmentProgram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.OperatingSystem" class="control-label"></label>
+                <input asp-for="DesktopComputer.OperatingSystem" class="form-control" />
+                <span asp-validation-for="DesktopComputer.OperatingSystem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.Specifications" class="control-label"></label>
+                <input asp-for="DesktopComputer.Specifications" class="form-control" />
+                <span asp-validation-for="DesktopComputer.Specifications" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.Notes" class="control-label"></label>
+                <input asp-for="DesktopComputer.Notes" class="form-control" />
+                <span asp-validation-for="DesktopComputer.Notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.DatePurchased" class="control-label"></label>
+                <input asp-for="DesktopComputer.DatePurchased" class="form-control" />
+                <span asp-validation-for="DesktopComputer.DatePurchased" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DesktopComputer.DateDestroyed" class="control-label"></label>
+                <input asp-for="DesktopComputer.DateDestroyed" class="form-control" />
+                <span asp-validation-for="DesktopComputer.DateDestroyed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,112 @@
+﻿@page
+@model TripTracker.UI.Pages.DesktopComputers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<div style="width:50%">
+    <table class="table" style="width:50%">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].Manufacturer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].TradeName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].ModelNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].ServieTag)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].ComputerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].CameronCountyNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].Department)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].DepartmentProgram)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].OperatingSystem)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].Specifications)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].Notes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].DatePurchased)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DesktopComputers[0].DateDestroyed)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.DesktopComputers)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Manufacturer)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TradeName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ModelNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServieTag)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ComputerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CameronCountyNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Department)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DepartmentProgram)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OperatingSystem)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Specifications)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Notes)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DatePurchased)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateDestroyed)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

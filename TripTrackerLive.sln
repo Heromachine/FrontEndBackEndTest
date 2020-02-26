@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripTracker.BackService", "TripTracker.BackService\TripTracker.BackService.csproj", "{657010E8-D1C9-4F01-BB98-1D9AD147FF77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripTracker.UI", "TripTracker.UI\TripTracker.UI.csproj", "{9EFE6BE0-8EF2-42BF-ADF5-523A24DA06FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{657010E8-D1C9-4F01-BB98-1D9AD147FF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657010E8-D1C9-4F01-BB98-1D9AD147FF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657010E8-D1C9-4F01-BB98-1D9AD147FF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657010E8-D1C9-4F01-BB98-1D9AD147FF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EFE6BE0-8EF2-42BF-ADF5-523A24DA06FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFE6BE0-8EF2-42BF-ADF5-523A24DA06FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFE6BE0-8EF2-42BF-ADF5-523A24DA06FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFE6BE0-8EF2-42BF-ADF5-523A24DA06FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {890582FD-9637-4322-A6FA-FABA608A141E}
+	EndGlobalSection
+EndGlobal
